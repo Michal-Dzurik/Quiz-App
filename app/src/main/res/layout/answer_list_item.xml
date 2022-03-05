@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/answer_transition"
+        android:layout_margin="15dp"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="15dp">
+
+    <TextView
+            android:id="@+id/answerLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A -"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnPrimary"/>
+    <TextView
+            android:gravity="right"
+            android:id="@+id/answerText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Lolec"
+            android:textSize="20dp"
+            android:textColor="?attr/colorOnPrimary"/>
+
+</LinearLayout>

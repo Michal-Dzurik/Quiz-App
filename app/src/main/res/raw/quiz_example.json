@@ -1,0 +1,13 @@
+{
+    "questions" : [
+        {
+            "question" : "Ako by so nazval svojho kamráta , ak je ťuťmák?",
+            "answers" : [
+                "Bahliak", "Geňo","Žochár","Mišo"
+            ],
+            "rightAnswer" : "Žochár"
+        }
+    ]
+
+}
+

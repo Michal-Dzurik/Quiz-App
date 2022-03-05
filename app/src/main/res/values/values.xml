@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HeadingView">
+        <attr name="android:text" format="string" />
+        <attr name="android:textColor" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MenuButton">
+        <attr name="android:text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageButton">
+        <attr name="android:src" format="string" />
+    </declare-styleable>
+
+    <!-- App style -->
+    <declare-styleable name="Theme.QuizApp">
+        <!-- Buttons -->
+        <attr name="buttonBackgroundColor" format="color"/>
+        <attr name="buttonBackgroundRippleColor" format="color"/>
+        <attr name="buttonTextColor" format="color"/>
+
+        <!-- ProgressBar -->
+        <attr name="progressBarBackground" format="color"/>
+
+        <!-- Dialog -->
+        <attr name="alertDialogBackgroundColor" format="color"/>
+
+
+    </declare-styleable>
+
+    <dimen name="progressBarHeightValue">20dp</dimen>
+    <dimen name="progressBarCornersRoundnessValue">20dp</dimen>
+
+</resources>

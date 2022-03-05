@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.QuizApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#2B2B2B</item>
+        <item name="colorPrimaryVariant">#3A3A3A</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#0072D1</item>
+        <item name="colorSecondaryVariant">#1A97FF</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Buttons -->
+        <item name="buttonBackgroundColor">?attr/colorPrimaryVariant</item>
+        <item name="buttonBackgroundRippleColor">#8C8C8C</item>
+        <item name="buttonTextColor">?attr/colorOnPrimary</item>
+
+        <!-- Buttons -->
+        <item name="progressBarBackground">?attr/colorSecondary</item>
+
+        <!-- Dialog -->
+        <item name="alertDialogBackgroundColor">?attr/buttonBackgroundRippleColor</item>
+
+        <!-- Customize your theme here. -->
+
+        <item name="alertDialogTheme">@style/Theme.QuizApp.AlertDialogTheme</item>
+    </style>
+    
+    <style name="Theme.QuizApp.ProgressBarHorizontal" parent="Theme.QuizApp.ProgressBarHorizontal" tools:ignore="ResourceCycle">
+        <item name="android:animationDuration">800</item>
+    </style>
+
+    <style name="Theme.QuizApp.QuestionHeadingView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.QuizApp.AlertDialogTheme" parent="android:Theme.Material.Dialog.Alert">
+        <!--<item name="buttonBarNegativeButtonStyle">@style/Theme.QuizApp.NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Theme.QuizApp.PositiveButtonStyle</item>
+        <item name="backgroundTint">?attr/alertDialogBackgroundColor</item>
+
+        <item name="android:colorBackground">?attr/colorPrimary</item>
+        &lt;!&ndash; Text Color for title and message &ndash;&gt;
+        <item name="colorOnSurface">?attr/colorPrimary</item>-->
+        <item name="android:colorPrimary">?attr/colorPrimary</item>
+        <item name="android:colorAccent">?attr/colorOnPrimary</item>
+
+    </style>
+
+    <style name="Theme.QuizApp.NegativeButtonStyle" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.QuizApp.PositiveButtonStyle" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+</resources>
