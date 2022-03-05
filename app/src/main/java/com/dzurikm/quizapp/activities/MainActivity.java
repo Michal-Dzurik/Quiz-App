@@ -58,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
         context = getApplicationContext();
 
-        Log.i("SRC", Environment.getExternalStorageDirectory().getAbsolutePath());
-
         startButton = (MenuButton) findViewById(R.id.startButton);
         exitButton = (MenuButton) findViewById(R.id.exitButton);
 

@@ -2,6 +2,7 @@ package com.dzurikm.quizapp.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
@@ -132,16 +133,14 @@ public class AnswerListAdapter extends RecyclerView.Adapter<AnswerListAdapter.Vi
 
     @SuppressLint("UseCompatLoadingForDrawables")
     public void animate(ViewHolder viewHolder,int position){
-        TransitionDrawable transition = (TransitionDrawable) viewHolder.itemView.getBackground();
 
         if (position == answer.getSelectedAnswer()){
-            transition.startTransition(500);
+            viewHolder.rootView.setBackgroundResource(R.drawable.answer_item_background_selected);
             Log.i("se","kosk");
         }
 
         if (lastSelected != null){
-            TransitionDrawable transitionBack = (TransitionDrawable) lastSelected.itemView.getBackground();
-            transitionBack.reverseTransition(500);
+            lastSelected.rootView.setBackgroundResource(R.drawable.answer_item_background);
         }
 
         lastSelected = viewHolder;

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/answer_transition"
+        android:background="@drawable/answer_item_background"
         android:layout_margin="15dp"
         android:paddingHorizontal="35dp"
         android:paddingVertical="15dp">
